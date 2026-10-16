@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3eb">
+<meta name="description" content="لحضور أجمل يوم في حياتنا">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="دعوة زفاف عمر وغنى">
+<meta property="og:title" content="دعوة خاصة">
+<meta property="og:description" content="لحضور أجمل يوم في حياتنا">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="دعوة خاصة">
+<meta name="twitter:description" content="لحضور أجمل يوم في حياتنا">
+<title>دعوة خاصة | لحضور أجمل يوم في حياتنا</title>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap');
+:root{--ivory:#f6f3eb;--gold:#ad8561;--ink:#594332;--line:#c6ad86}
+*{box-sizing:border-box}
+html{background:#e5dfd3;color:var(--ink);font-family:'Cairo',sans-serif}
+body{margin:0}
+.night{min-height:100svh;padding:32px 18px;background:radial-gradient(ellipse at top,#fffdf7,transparent 65%),#e5dfd3}
+.wrap{width:min(100%,760px);margin:auto;text-align:center}
+.eyebrow{font-family:'Amiri',serif;color:#8e6a4d;font-size:23px;margin-bottom:22px}
+.eyebrow small{display:block;font-family:'Cairo',sans-serif;font-size:11px;letter-spacing:1px;margin-top:3px}
+.stage{position:relative}
+.envelope,.hint{display:none}
+.night{position:relative;isolation:isolate;overflow:hidden}
+.wrap{position:relative;z-index:1}
+.js .night:not(.opened){display:flex;align-items:center;justify-content:center}
+.js .card:not(.show){display:none}
+.js .envelope{display:block}
+.js .hint{display:block;color:#8e6a4d;font-size:12px;margin-top:24px}
+.stage{perspective:1400px}
+.envelope{position:relative;width:min(100%,420px);height:270px;margin:45px auto 0;padding:0;border:0;background:transparent;cursor:pointer;filter:drop-shadow(0 20px 25px #79604430);transition:transform .35s}
+.envelope:hover{transform:translateY(-5px)}
+.env-body{position:absolute;inset:35px 0 0;background:linear-gradient(145deg,#fffaf0,#e5d4bc);border:1px solid #b89a73;border-radius:6px;overflow:hidden}
+.env-body:after{content:'';position:absolute;inset:0;background:linear-gradient(30deg,#e8d9c3 49.5%,transparent 50%),linear-gradient(-30deg,#efdfc7 49.5%,transparent 50%)}
+.env-floral{z-index:1;width:47%;opacity:.85}
+.flap{position:absolute;inset:35px 0 auto;height:160px;background:linear-gradient(160deg,#fcf6e9,#dcc6a6);clip-path:polygon(0 0,100% 0,50% 85%);transform-origin:top;transition:transform .85s cubic-bezier(.2,.8,.2,1);z-index:2}
+.frame-names{position:absolute;top:61px;left:0;right:0;font:32px 'Amiri',serif;color:#88613f;z-index:3;transition:opacity .4s}
+.seal{position:absolute;top:151px;left:50%;width:61px;height:61px;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle at 30% 25%,#e5c79a,#ab8053);color:#67472d;border:3px double #f3ddba;box-shadow:0 4px 12px #795b3b40;transform:translateX(-50%);font:23px 'Amiri',serif;z-index:4;transition:transform .5s,opacity .4s}
+.envelope.open .flap{transform:rotateX(180deg)}
+.envelope.open .seal{transform:translateX(-50%) scale(.3);opacity:0}
+.envelope.open .frame-names{opacity:0}
+.envelope[hidden],.hint[hidden]{display:none}
+.card.show{animation:riseIn 1s cubic-bezier(.2,.8,.2,1)}
+@keyframes riseIn{from{opacity:0;transform:translateY(45px) scale(.96)}to{opacity:1;transform:none}}
+.scene-floral{position:fixed;z-index:0;max-width:310px;opacity:.65}
+.floating-flower{position:fixed;pointer-events:none;z-index:0;width:var(--size);height:var(--size);color:#bd9477;opacity:0;animation:flowerDrift var(--duration) linear infinite;animation-delay:var(--delay)}
+.floating-flower.burst{z-index:2;animation-iteration-count:1;color:#c38d76}
+@keyframes flowerDrift{0%{opacity:0;transform:translate3d(0,-50px,0) rotate(0)}12%{opacity:.5}85%{opacity:.4}100%{opacity:0;transform:translate3d(var(--drift),110vh,0) rotate(320deg)}}
+@media(max-width:480px){.envelope{height:235px}.flap{height:145px}.frame-names{font-size:28px}.seal{top:140px}.scene-floral{max-width:190px}}
+@media(prefers-reduced-motion:reduce){.floating-flower{display:none}}
+.card{position:relative;isolation:isolate;overflow:hidden;padding:170px 68px 65px;background:linear-gradient(133deg,transparent 12%,#fffdf8b3 19%,transparent 28%),linear-gradient(35deg,#c9c1b466,transparent 22%,#fffefa 36%,#e3dfd6 48%,#fffefa 64%,#d6d1c7 82%,#f8f6f0);box-shadow:0 15px 55px #63523e24}
+.card:before{content:'';position:absolute;inset:26px;border:1px solid var(--line);outline:1px solid #c6ad865c;outline-offset:5px;z-index:-1;pointer-events:none}
+.floral{position:absolute;z-index:-1;pointer-events:none;background-image:url('/assets/floral-reference.jpeg');background-repeat:no-repeat}
+.floral-top{top:0;left:0;width:44%;aspect-ratio:330/250;background-size:255.46% auto;background-position:left top;mask-image:linear-gradient(to bottom,#000 55%,transparent),linear-gradient(to right,#000 60%,transparent);mask-composite:intersect}
+.floral-bottom{bottom:0;right:0;width:48%;aspect-ratio:390/350;background-size:216.16% auto;background-position:right bottom;mask-image:linear-gradient(to top,#000 60%,transparent),linear-gradient(to left,#000 65%,transparent);mask-composite:intersect}
+.hosts{font-family:'Amiri',serif;font-size:27px;line-height:1.7;color:#936e50;margin:0 auto 20px}
+.orn{font-family:'Amiri',serif;color:var(--gold);font-size:25px;letter-spacing:7px;margin:10px 0}
+.verse{font-family:'Amiri',serif;font-size:21px;line-height:1.9;color:#443c30;margin:18px auto;padding:14px 10px;border:1px solid var(--line);max-width:540px}
+.line{height:1px;width:65%;margin:25px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+h1{font-family:'Amiri',serif;font-weight:400;font-size:76px;line-height:1.5;color:#a97a55;margin:15px 0 18px}
+.invite{font-size:14px;line-height:2.1;max-width:460px;margin:auto}
+.guest-greeting{font-family:'Amiri',serif;font-size:24px;color:#936e50;overflow-wrap:anywhere}
+.details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:34px -14px 26px}
+.detail{padding:4px 12px;border-left:1px solid var(--line)}
+.detail:last-child{border:0}
+.detail svg{width:27px;height:27px;margin-bottom:8px;stroke:var(--gold)}
+.detail b{display:block;font-family:'Amiri',serif;font-size:20px;font-weight:400;color:#936e50;margin-bottom:4px}
+.detail span{display:block;font-size:13px;line-height:1.9}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.btn{border:1px solid var(--gold);border-radius:3px;padding:12px 19px;text-decoration:none;font:600 12px 'Cairo',sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{transform:translateY(-2px);background:#e9ddcb;color:#594332}
+.primary{background:#98714f;color:#fffdf5}
+.secondary{background:#fffdf580;color:#79583c}
+:focus-visible{outline:3px solid #86603f;outline-offset:4px}
+.btn:disabled{opacity:.65;cursor:default;transform:none}
+.attendance-notice{margin:32px 0 0;padding:20px 12px;border-block:1px solid var(--line);font-size:13px;line-height:2.1;background:#fffdf54a}
+.attendance-notice strong{display:block;font-size:15px;color:#79583c;margin-bottom:6px}
+.rsvp{margin-top:32px;text-align:right}
+.rsvp h2{font-family:'Amiri',serif;font-weight:400;font-size:32px;color:#936e50;text-align:center;margin:0 0 12px}
+.rsvp label{display:block;font-size:12px;line-height:1.9;margin:18px 0 7px}
+.rsvp input[type=text]{width:100%;padding:13px 12px;border:1px solid #bda585;border-radius:2px;background:#fffdf9b3;font:inherit;font-size:14px;color:var(--ink)}
+.rsvp .check{display:flex;align-items:flex-start;gap:12px;line-height:2}
+.check input{width:20px;height:20px;flex-shrink:0;margin-top:4px;accent-color:#98714f}
+#rsvp-status{min-height:2em;font-size:13px;line-height:2;text-align:center}
+.footer{font-family:'Amiri',serif;font-size:20px;margin:22px 0 35px;color:#936e50}
+@media(min-width:700px){.night{padding-block:48px}.card{padding-bottom:95px}}
+@media(max-width:480px){.night{padding:14px 9px}.eyebrow{font-size:20px;margin-bottom:14px}.card{padding:116px 30px 95px}.card:before{inset:13px;outline-offset:3px}.hosts{font-size:23px}.verse{font-size:17px;padding:10px 6px}h1{font-size:59px}.details{margin-inline:-10px}.detail{padding:4px 7px}.detail span{font-size:11px}.detail b{font-size:18px}.invite{font-size:12px}.btn{padding:12px;font-size:11px}.attendance-notice{font-size:12px}.attendance-notice strong{font-size:14px}.floral-bottom{width:56%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="night" id="scene">
+  <div class="floral floral-top scene-floral" aria-hidden="true"></div>
+  <div class="floral floral-bottom scene-floral" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">♡ دعوة خاصة ♡<small>لحضور أجمل يوم في حياتنا</small></div>
+
+    <div class="stage" id="stage">
+      <button class="envelope" id="envelope" type="button" aria-label="افتح الدعوة" aria-controls="card" aria-expanded="false">
+        <span class="env-body"><span class="floral floral-top env-floral" aria-hidden="true"></span></span>
+        <span class="flap" aria-hidden="true"></span>
+        <span class="seal" aria-hidden="true">❦</span>
+      </button>
+      <p class="hint" id="hint">المس الظرف لفتح الدعوة</p>
+      <div class="card" id="card" tabindex="-1" aria-label="دعوة زفاف عمر وغنى">
+        <div class="floral floral-top" aria-hidden="true"></div>
+        <div class="floral floral-bottom" aria-hidden="true"></div>
+        <div class="verse">بسم الله الرحمن الرحيم</div>
+        <div class="orn">❦ ✦ ❦</div>
+        <div class="invite">بكل الحب و الفرح نتشرف بدعوتكم</div>
+        <p class="hosts">آل هاشم و آل كبارة<br>يدعونكم إلى زفاف نجليهما</p>
+        <p id="guest-greeting" class="guest-greeting" hidden></p>
+        <h1>عمر &amp; غنى</h1>
+        <div class="line"></div>
+
+        <div class="details">
+          <div class="detail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a67a44" stroke-width="1.6"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+            <b>التاريخ</b><span><time datetime="2026-11-01">١/١١/٢٠٢٦ (١ نوفمبر)</time></span>
+          </div>
+          <div class="detail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a67a44" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+            <b>الوقت</b><span>الساعة <time datetime="16:00">٤:٠٠ مساءً</time></span>
+          </div>
+          <div class="detail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a67a44" stroke-width="1.6"><path d="M12 21s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg>
+            <b>المكان</b><span>للرجال في مسجد الخلفاء الراشدين</span><span>و النساء في خلية النخلة</span>
+          </div>
+        </div>
+
+        <div class="orn">❧</div>
+        <div class="invite">وجودكم يكمّل فرحتنا ♡</div>
+
+        <div class="attendance-notice">
+          <strong>الدعوة مخصصة لشخصين بالغين فقط</strong>
+          نعتذر عن عدم استقبال الأطفال، وذلك التزاماً بتعليمات إدارة المكان. يُرجى عدم اصطحاب الأطفال. نشكركم على تفهّمكم.
+        </div>
+        <form class="rsvp" id="rsvp-form">
+          <h2>تأكيد الحضور</h2>
+          <p class="invite">يُرجى إدخال اسمَي الحاضرين وتأكيد الحضور أدناه.</p>
+          <label for="guest1">اسم الضيف الأول</label>
+          <input type="text" id="guest1" name="guest1" maxlength="120" autocomplete="name" required>
+          <label for="guest2">اسم الضيف الثاني (اختياري إذا كنت ستحضر بمفردك)</label>
+          <input type="text" id="guest2" name="guest2" maxlength="120" autocomplete="off">
+          <div hidden><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <label class="check"><input type="checkbox" name="confirmed" required><span>أؤكد حضور الأسماء المذكورة أعلاه، وأقرّ بأن الدعوة لشخصين بالغين كحد أقصى، وأن اصطحاب الأطفال غير مسموح وفقاً لتعليمات إدارة المكان.</span></label>
+          <div class="actions"><button class="btn primary" type="submit">إرسال تأكيد الحضور</button></div>
+          <p id="rsvp-status" role="status" aria-live="polite"></p>
+          <noscript>يرجى تفعيل JavaScript لإرسال تأكيد الحضور.</noscript>
+        </form>
+        <div class="footer">نتشرف بكم وننتظركم بكل محبة</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const scene = document.getElementById('scene');
+const envelope = document.getElementById('envelope');
+const card = document.getElementById('card');
+const hint = document.getElementById('hint');
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const flowerShape = '<svg viewBox="0 0 48 48" fill="currentColor" aria-hidden="true"><path d="M24 21C5 9 22-6 24 15C26-6 43 9 27 22C48 16 48 38 29 27C40 46 18 52 23 30C8 46-4 27 19 25C-2 18 9 1 24 21Z" opacity=".65"/><circle cx="24" cy="24" r="4" fill="#ad8561"/></svg>';
+function scatterFlowers(count, burst = false) {
+  if (reducedMotion.matches) return;
+  for (let i = 0; i < count; i++) {
+    const flower = document.createElement('span');
+    flower.className = 'floating-flower' + (burst ? ' burst' : '');
+    flower.setAttribute('aria-hidden', 'true');
+    flower.innerHTML = flowerShape;
+    flower.style.left = (4 + Math.random() * 90) + '%';
+    flower.style.top = '0';
+    flower.style.setProperty('--size', (12 + Math.random() * 18) + 'px');
+    flower.style.setProperty('--duration', (burst ? 5 + Math.random() * 4 : 15 + Math.random() * 10) + 's');
+    flower.style.setProperty('--delay', (burst ? Math.random() * .5 : -Math.random() * 25) + 's');
+    flower.style.setProperty('--drift', (Math.random() * 140 - 70) + 'px');
+    if (burst) flower.addEventListener('animationend', () => flower.remove(), { once: true });
+    scene.appendChild(flower);
+  }
+}
+scatterFlowers(12);
+reducedMotion.addEventListener('change', () => {
+  document.querySelectorAll('.floating-flower').forEach(flower => flower.remove());
+  scatterFlowers(12);
+});
+let opening = false;
+envelope.addEventListener('click', () => {
+  if (opening) return;
+  opening = true;
+  envelope.classList.add('open');
+  envelope.setAttribute('aria-expanded', 'true');
+  hint.hidden = true;
+  scatterFlowers(24, true);
+  setTimeout(() => {
+    envelope.hidden = true;
+    scene.classList.add('opened');
+    card.classList.add('show');
+    card.focus({ preventScroll: true });
+    card.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
+  }, reducedMotion.matches ? 0 : 850);
+});
+// Personalized names are treated as text, never HTML.
+const params = new URLSearchParams(location.search);
+const firstGuest = (params.get('guest1') || '').slice(0, 120);
+const secondGuest = (params.get('guest2') || '').slice(0, 120);
+document.getElementById('guest1').value = firstGuest;
+document.getElementById('guest2').value = secondGuest;
+if (firstGuest) {
+  const greeting = document.getElementById('guest-greeting');
+  greeting.textContent = 'بكل محبة ندعو: ' + [firstGuest, secondGuest].filter(Boolean).join(' و ');
+  greeting.hidden = false;
+}
+const rsvpForm = document.getElementById('rsvp-form');
+let responseId = crypto.randomUUID();
+rsvpForm.addEventListener('submit', async event => {
+  event.preventDefault();
+  if (!rsvpForm.reportValidity()) return;
+  const button = rsvpForm.querySelector('button');
+  const status = document.getElementById('rsvp-status');
+  button.disabled = true;
+  status.textContent = 'جارٍ إرسال تأكيد الحضور…';
+  try {
+    const values = new FormData(rsvpForm);
+    const result = await fetch('/api/attendance', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: responseId, guest1: values.get('guest1'), guest2: values.get('guest2'),
+        confirmed: values.get('confirmed') === 'on', website: values.get('website') }), signal: AbortSignal.timeout(20000) });
+    if (!result.ok || !(await result.json()).ok) throw new Error('Submission failed');
+    status.textContent = 'شكراً لكم، تم تسجيل تأكيد حضوركم. نسعد بمشاركتكم فرحتنا.';
+    button.textContent = 'تم تأكيد الحضور';
+    for (const input of rsvpForm.querySelectorAll('input')) input.disabled = true;
+  } catch {
+    status.textContent = 'تعذّر إرسال التأكيد. يُرجى المحاولة مرة أخرى، فلم يتم تأكيد الإرسال بعد.';
+    button.disabled = false;
+  }
+});
+
+</script>
+</body>
+</html>

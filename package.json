@@ -1,0 +1,23 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "An interactive Arabic wedding invitation for Omar and Ghina, prepared as a shareable website that can be opened from any browser.",
+  "scripts": {
+    "check": "tsc --noEmit --module nodenext --moduleResolution nodenext --target es2022 --skipLibCheck db/index.ts db/schema.ts netlify/functions/attendance.mts netlify/functions/sync-attendance.mts netlify/lib/sync-sheet.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "@netlify/functions": "^6.0.2",
+    "drizzle-orm": "^1.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
